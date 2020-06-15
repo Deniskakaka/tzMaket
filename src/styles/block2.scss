@@ -1,0 +1,135 @@
+@import "../breakpoints/breakpoints.scss";
+
+.block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 160px;
+  padding-bottom: 45px;
+
+  & h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-bottom: 57px;
+
+    @include for-medium-up {
+      font-size: 35px;
+    }
+  }
+}
+
+.block2-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1222px;
+
+  @include for-e-large-up{
+      width: 960px;
+  }
+
+  @include for-large-up  {
+    width: 750px;
+  }
+
+  @include for-medium-up {
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__car {
+    background-image: url("./img/bf73c87bc2a79f028d36fd0a77263351.png");
+    background-size: cover;
+    width: 696px;
+    height: 568px;
+
+    @include for-e-large-up {
+        width: 550px;
+        height: 450px;
+    }
+
+    @include for-large-up  {
+      width: 450px;
+      height: 350px;
+      align-self: center;
+    }
+
+    @include for-medium-up {
+      display: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.block2-content-about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 408px;
+
+  @include for-e-large-up{
+      width: 340px;
+  }
+
+  @include for-large-up  {
+    width: 290px;
+  }
+
+  & img {
+    @include for-large-up  {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 328px;
+
+    @include for-e-large-up {
+        width: 250px;
+    }
+
+    & span {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 28px;
+
+      @include for-large-up  {
+        font-size: 24px;
+      }
+    }
+
+    & hr {
+      width: 98px;
+      height: 10px;
+      background-color: #ff213b;
+      margin-left: 0;
+      border: none;
+
+      @include for-large-up  {
+        width: 74px;
+      }
+    }
+
+    & p {
+      font-family: "Muller Light";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+
+      @include for-large-up  {
+        font-size: 13px;
+        margin: 0;
+      }
+    }
+  }
+}

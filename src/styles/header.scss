@@ -1,0 +1,83 @@
+@import "../breakpoints/breakpoints.scss";
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 26px;
+
+  @include for-medium-up {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.header-logo {
+  width: 142px;
+  height: 46px;
+  background-image: url("./img/logo.png");
+  background-size: cover;
+
+  @include for-large-up {
+    width: 100px;
+    height: 32px;
+  }
+}
+
+.header-form {
+    display: flex;
+    flex-wrap: nowrap;
+
+    @include for-medium-up {
+        margin-top: 30px;
+    }
+
+    @include for-medium-up {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+  & input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000000;
+
+    @include for-large-up {
+        font-size: 16px;
+    }
+
+    @include for-medium-up {
+        font-size: 13px;
+        width: 40%;
+        margin-right: 10px;
+    }
+  }
+
+  & button {
+    width: 270px;
+    height: 61px;
+    border-radius: 31px;
+    border: 2px solid #ff213b;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000000;
+    outline: none;
+    cursor: pointer;
+
+    @include for-large-up {
+        font-size: 16px;
+        width: 200px;
+        height: 45px;
+    }
+
+    @include for-medium-up {
+        font-size: 13px;
+        width: 40%;
+    }
+  }
+}
