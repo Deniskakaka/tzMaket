@@ -1,0 +1,153 @@
+@import "../breakpoints/breakpoints.scss";
+
+.block3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 76px;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  & h2 {
+    text-align: center;
+    font-family: "Fira Sans - Black";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 61px;
+
+    @include for-medium-up {
+        font-size: 35px;
+    }
+  }
+}
+
+.block3__content-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 448px;
+  height: 485px;
+  box-shadow: 0 0 56px 4px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  margin-left: 30px;
+  margin-bottom: 184px;
+
+  @include for-medium-up {
+      width: 300px;
+      height: 380px;
+      margin-left: 10px;
+      margin-bottom: 100px;
+  }
+
+  & div {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 80px;
+    background-color: #172c42;
+    height: 83px;
+    color: #ffffff;
+    font-family: "Fira Sans - Black";
+
+    @include for-medium-up {
+        font-size: 20px;
+        height: 63px;
+    }
+  }
+
+  & hr {
+    width: 100%;
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #000000;
+    font-family: "Muller Light";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: none;
+    height: 200px;
+
+    @include for-medium-up {
+        height: 130px;
+        font-size: 12px;
+    }
+
+    & li {
+      position: relative;
+      width: 302px;
+
+      @include for-medium-up{
+          width: 250px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("./img/interface-2.png");
+        background-size: 31px 31px;
+        width: 31px;
+        height: 31px;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -45px;
+
+        @include for-medium-up {
+            width: 20px;
+            height: 20px;
+            background-size: 20px 20px;
+            left: -25px;
+        }
+      }
+    }
+  }
+
+  & span,
+  & p {
+    color: #172c42;
+    font-family: "Muller Light";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+
+    @include for-medium-up{
+        font-size: 18px;
+    }
+  }
+
+  & span {
+    text-decoration: line-through;
+  }
+
+  & button {
+    width: 325px;
+    height: 66px;
+    box-shadow: 0 13px 36px 7px rgba(255, 33, 59, 0.25);
+    background-color: #ff213b;
+    color: #ffffff;
+    font-family: "Fira Sans - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    margin-bottom: 20px;
+
+    @include for-medium-up{
+        width: 250px;
+        height: 45px;
+        font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "../breakpoints/breakpoints.scss";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 102px;
+  background-color: #172c42;
+
+  & > img {
+
+    @include for-medium-up  {
+        width: 120px;
+    }
+  }
+
+  & button {
+    border: none;
+    background-color: transparent;
+
+    & a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Fira Sans";
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 39px;
+
+      @include for-medium-up  {
+        font-size: 16px;
+      }
+
+      & img {
+          margin-left: 5px;
+
+          @include for-medium-up  {
+            width: 13px;
+            height: 18px;
+          }
+      }
+    }
+  }
+}
