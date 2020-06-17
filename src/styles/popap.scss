@@ -50,6 +50,7 @@
         width: 500px;
         height: 63px;
         padding-left: 20px;
+        margin-bottom: 15px;
 
         @include for-large-up{
           width: 400px;
@@ -91,12 +92,12 @@
 
         @include for-medium-up{
           width: 260px;
-          height: 50px;
+          height: 40px;
+          margin-bottom: 20px;
         }
 
         @include for-small-up {
           width: 220px;
-          height: 40px;
         }
       }
     }
