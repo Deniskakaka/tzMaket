@@ -4,6 +4,7 @@
   "main": "webpack.config.js",
   "dependencies": {
     "core-js": "^3.6.3",
+    "emailjs-com": "^2.4.1",
     "identity-obj-proxy": "^3.0.0",
     "style-loader": "^1.1.2"
   },
