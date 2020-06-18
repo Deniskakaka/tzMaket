@@ -36,12 +36,12 @@
                 </div>
                 <div class="popup__request">
                     <span>Заявка</span>
-                    <form  action="https://formspree.io/xqkylkon" method="POST">
-                        <input type="text" placeholder="Имя"/>
-                        <input type="phone" placeholder="Телефон"/>
-                        <input type="phone" placeholder="Ваш номер"/> 
-                        <input type="text" name="_replyto" placeholder="Ваш имаил">
-                        <button type="submit">Заказать</button>
+                    <form  onsubmit="return false;">
+                        <input type="text" placeholder="Имя" name="name" class="name"/>
+                        <input type="phone" placeholder="Телефон" name="phone" class="phone"/>
+                        <input type="phone" placeholder="Ваш номер" name="yourPhone" class="yourPhone"/> 
+                        <input type="text" name="_replyto" placeholder="Ваш имаил" name="Email" class="mail"/>
+                        <button type="submit" class="send">Заказать</button>
                     </form>
                 </div>
             </div>
@@ -117,12 +117,12 @@
             <div class="popup2">
                 <div class="popup2__request">
                     <span>Заявка</span>
-                    <form  action="https://formspree.io/xqkylkon" method="POST">
-                        <input type="text" placeholder="Имя"/>
-                        <input type="phone" placeholder="Телефон"/>
-                        <input type="phone" placeholder="Ваш номер"/> 
-                        <input type="text" name="_replyto" placeholder="Ваш имаил">
-                        <button type="submit">Заказать</button>
+                    <form onsubmit="return false;">
+                        <input type="text" placeholder="Имя" name="name" class="name2"/>
+                        <input type="phone" placeholder="Телефон" name="phone" class="phone2"/>
+                        <input type="phone" placeholder="Ваш номер" name="yourPhone" class="yourPhone2"/> 
+                        <input type="text" name="_replyto" placeholder="Ваш имаил" name="Email" class="mail2"/>
+                        <button type="submit" class="send">Заказать</button>
                     </form>
                 </div>
             </div>
@@ -176,5 +176,8 @@
         <img src="./src/img/лого1.png"/>
         <button><a href="#top">Наверх<img src="./src/img/arrowsoutline.png"/></a> </button>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
 <script type="text/javascript" src="./pages/bundle.js"></script></body>
 </html>

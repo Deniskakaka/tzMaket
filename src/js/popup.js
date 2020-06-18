@@ -21,7 +21,7 @@ function showPopupThank() {
   }
 }
 
-function showPopupRequest() {
+export function showPopupRequest() {
   popup.classList.toggle("show");
   popupRequest.classList.toggle("showPopupRequest");
 }

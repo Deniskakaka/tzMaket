@@ -117,12 +117,12 @@
             <div class="popup2">
                 <div class="popup2__request">
                     <span>Заявка</span>
-                    <form>
-                        <input type="text" placeholder="Имя"/>
-                        <input type="phone" placeholder="Телефон"/>
-                        <input type="phone" placeholder="Ваш номер"/> 
-                        <input type="text" name="_replyto" placeholder="Ваш имаил">
-                        <button type="submit">Заказать</button>
+                    <form onsubmit="return false;">
+                        <input type="text" placeholder="Имя" name="name" class="name2"/>
+                        <input type="phone" placeholder="Телефон" name="phone" class="phone2"/>
+                        <input type="phone" placeholder="Ваш номер" name="yourPhone" class="yourPhone2"/> 
+                        <input type="text" name="_replyto" placeholder="Ваш имаил" name="Email" class="mail2"/>
+                        <button type="submit" class="send">Заказать</button>
                     </form>
                 </div>
             </div>
