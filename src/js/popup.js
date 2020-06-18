@@ -3,7 +3,7 @@ const popup2 = document.querySelector(".popup2");
 const order1 = document.querySelector(".order1");
 const order2 = document.querySelector(".order2");
 const order3 = document.querySelectorAll(".order3");
-const name = document.querySelector(".name");
+const name2 = document.querySelector(".name2");
 const phones = document.querySelector(".phones");
 const yourPhone = document.querySelector(".yourPhone");
 const popupThanks = document.querySelector(".popup__thanks");
@@ -31,7 +31,7 @@ popup.addEventListener("click", (e) => {
     showPopupThank();
     popupRequest.classList.remove("showPopupRequest");
     popup.classList.remove("show");
-    name.value = "";
+    name2.value = "";
     phones.value = "";
     yourPhone.value = "";
   }

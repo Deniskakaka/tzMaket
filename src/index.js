@@ -6,6 +6,9 @@ import {showPopupRequest} from "../src/js/popup.js";
 let count = 0;
 const list = document.querySelectorAll(".list");
 const send = document.querySelectorAll(".send");
+const nameValue = document.querySelectorAll(".name");
+const phoneValue = document.querySelectorAll(".phone");
+const mailValue = document.querySelectorAll(".mail");
 
 function check(arr, count) {
   for (let i = 0; i <= arr.length; i++) {
@@ -31,15 +34,9 @@ for (let elem = 0; elem <= list.length; elem++) {
 
 function message() {
   let templateParams = {
-    name: !document.querySelector(".name").value
-      ? document.querySelector(".name2").value
-      : document.querySelector(".name").value,
-    phone: !document.querySelector(".phone").value
-      ? document.querySelector(".phone2").value
-      : document.querySelector(".phone").value,
-    email: !document.querySelector(".mail").value
-      ? document.querySelector(".mail2").value
-      : document.querySelector(".mail").value,
+    name: !nameValue[0].value ? nameValue[1].value: nameValue[0].value,
+    phone: !phoneValue[0].value ? phoneValue[1].value : phoneValue[0].value,
+    email: !mailValue[0].value ? mailValue[1].value: mailValue[0].value
   };
   emailjs
     .send(
