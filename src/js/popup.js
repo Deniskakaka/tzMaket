@@ -11,11 +11,7 @@ const popupRequest = document.querySelector(".popup__request");
 const popupRequest2 = document.querySelector(".popup2__request");
 
 function showPopupThank() {
-  if (
-    name.value !== "" &&
-    phones.value !== "" &&
-    yourPhone.value !== ""
-  ) {
+  if (name2.value !== "" && phones.value !== "") {
     popup.classList.toggle("show");
     popupThanks.classList.toggle("showPopapThank");
   }
