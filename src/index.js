@@ -28,9 +28,9 @@ for (let elem = 0; elem <= list.length; elem++) {
   }
 }
 
-(function () {
+window.addEventListener("load", () => {
   emailjs.init("user_N5JR8YYD4ZUE9uPaypxsL");
-})();
+});
 
 function message() {
   let templateParams = {
@@ -59,5 +59,6 @@ for (let i = 0; i < send.length; i++) {
     message();
     showPopupRequest()
     document.querySelector(".popup2").classList.remove("show");
+    document.querySelectorAll('input, text').forEach(el=>el.value = '');
   });
 }
